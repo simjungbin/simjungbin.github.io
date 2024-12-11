@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+ *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    body{
+        font-family: 'Pretendard-Medium', sans-serif;
+            background-color: #f4e4c3;
+            margin: 0;
+            min-height: 100vh;
+    }
+    .container {
+            max-width: 90%; 
+            position: relative;
+        }
+        .img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .img1{
+            position: absolute;
+            top: 45%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+        }
+    #menu{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f38eae;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            max-width: 1700px;
+        }
+        #menu li{
+            list-style: none;
+            margin: 10px 15px;
+        }
+        .button{       
+            font-size: 15px;
+            font-weight: bold;
+            color: #f38eae;
+            text-align: center;
+            padding: 10px 30px;
+            border-radius: 30px;
+            background-color: #34a469;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 0 0 10px;
+        }
+        #logo {
+            margin: 10px 0;
+        }
+        #logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+    h3{
+        font-size: 40px;
+            font-family: 'pretendard-medium';
+            font-weight: bold;
+            text-align: center;
+            padding: center;
+            margin: 0 auto;
+            max-width: 80%;
+            white-space: nowrap;
+            color: #f39904;
+    }
+
+            .button:hover {
+            color: #f4e4c3;
+        }
+        .zoom:hover {
+            transform: scale(1.2);
+            transition: filter 0.3s ease;       
+            }
+
+
+            @media (max-width: 768px) {
+            body {
+                background-position: center top;
+            }
+
+            #menu {
+                flex-direction: column;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+            .button {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+        }
+        table {
+    border-spacing: 0px;
+    border-style: none;
+    padding: 0px;}  
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evolution</title>
+</head>
+<body>
+    <center>
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logo" width="200" height="100">
+                </a>
+            </div>
+            <ul id="menu">
+                <a href="origin.html" class="button">ORIGIN</a>
+                <a href="path.html" class="button">PATH</a>
+                <a href="evolution.html" class="button">EVOLUTION</a>
+                <a href="admission.html" class="button">ADMISSIONS</a>
+                <a href="kaywon.html" class="button">KAYWON</a>
+            </ul>
+        </header>
+        <main>
+ <h3>EVOLUTION</h3>
+ <div class="container">
+    <span class="img"><img src="EVOLUTION2.png" width="800" height="1000"></span>
+    <div class="img1">
+    <table style="width:100%";>
+    <tr>
+        <td align="right"  style="width:15%";><img src="f1.png" width="200" height="270" class="zoom"></td> 
+    </tr>
+    <tr>
+        <td align="left" style="width:15%"><img src="f2.png" width="200" height="300" class="zoom"></td>
+    </tr>
+    <tr>
+        <td  align="right"  style="width:15%";><img src="f3.png" width="250" height="200" class="zoom"></td>
+    </tr>
+    <tr>
+        <td align="left" style="width:15%"><img src="F4.png" width="300" height="200" class="zoom"></td>
+    </tr>
+ </table>
+</div> 
+</div>
+ 
+</main>    
+</body>
+</html>

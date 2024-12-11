@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <style>
+*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    body{
+        font-family: 'Pretendard-Medium', sans-serif;
+            background-color: #f4e4c3;
+            background-image: url(b2.png);
+            background-repeat: repeat-x;
+            background-size: contain;
+            background-position: bottom;
+            width: 100%;
+            min-height: 100vh;
+    }
+    .container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+        }
+        
+        .img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .img1-container {
+        position: relative;
+        display: inline-block;
+        position: absolute;
+        top: 25%; 
+        left: 15%;
+        transform: translate(-50%, -50%);
+        }
+
+        .img1-container .img1 {
+        display: block;
+        transition: filter 0.3s ease;
+        }
+
+        .img1-container:hover .img1 {
+        filter: brightness(70%);
+        }
+
+        .img1-container .img1-overlay {
+        font-family:'pretendard-regular';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+         color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        }
+
+        .img1-container:hover .img1-overlay {
+        opacity: 1;
+        }
+        .img2-container {
+        position: relative;
+        display: inline-block;
+        position: absolute;
+        top: 70%; 
+        left: 30%;
+        transform: translate(-50%, -50%);
+        }
+
+        .img2-container .img1 {
+        display: block;
+        transition: filter 0.3s ease;
+        }
+
+        .img2-container:hover .img2 {
+        filter: brightness(70%);
+        }
+
+        .img2-container .img2-overlay {
+        font-family:'pretendard-regular';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+         color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        }
+
+        .img2-container:hover .img2-overlay {
+        opacity: 1;
+        }
+        p{
+            font-weight: bold;
+            font-size: 25px;
+            font-family:'pretendard',Regular;
+            color: #1384c0;
+            text-align: center;
+            width: 400px;
+            margin: 30px 20px 20px 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 70px;
+            padding-right: 70px;
+            border-radius: 50px;
+           background-color: #f4e4c3;
+           border: solid #1384c0 5px;
+        }
+    header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+        }
+    #menu{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f39904;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            max-width: 1700px;
+        }
+        #menu li{
+            list-style: none;
+            margin: 10px 15px;
+        }
+        .button{       
+            font-size: 15px;
+            font-weight: bold;
+            color: #f39904;
+            text-align: center;
+            padding: 10px 30px;
+            border-radius: 30px;
+            background-color: #e3562b;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 0 0 10px;
+        }
+        #logo {
+            margin: 10px 0;
+        }
+        #logo img {
+            max-width: 100%;
+            height: auto;
+        }
+    h3{
+        font-size: 40px;
+            font-family: 'pretendard-medium';
+            font-weight: bold;
+            text-align: center;
+            padding: center;
+            margin: 0 auto;
+            max-width: 80%;
+            white-space: nowrap;
+            color: #1384c0;
+    }
+    .text-overlay {
+            font-family:'pretendard-regular';
+            position: absolute;
+            top: 60%; 
+            left: 75%;
+            transform: translate(-50%, -50%);
+            padding: 15px 20px; 
+            text-align: left;
+            width:100%;
+            height: 100%;
+            max-width: 35%;
+            font-size: 13px;
+            
+        }
+        h5 {
+            color: #1384c0;
+            font-weight: bold;
+            font-family:'pretendard-regular';
+            font-size: 20px;
+        }
+        .button:hover {
+            color: #f4e4c3;
+        }
+        .zoom:hover {
+            transform: scale(1.2);
+            transition: filter 0.3s ease;       
+            }
+        @media (max-width: 768px) {
+            body {
+                background-position: center top;
+            }
+
+            #menu {
+                flex-direction: column;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .button {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+        }
+   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>origin</title>
+</head>
+<body>
+    <center>
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logo" width="200" height="100">
+                </a>
+            </div>
+            <ul id="menu">
+                <a href="origin.html" class="button">ORIGIN</a>
+                <a href="path.html" class="button">PATH</a>
+                <a href="evolution.html" class="button">EVOLUTION</a>
+                <a href="admission.html" class="button">ADMISSIONS</a>
+                <a href="kaywon.html" class="button">KAYWON</a>
+            </ul>
+        </header>
+        <main>
+ <h3>ORIGIN</h3><br>
+ 
+ <div class="container">
+            <img src="origin.png" class="img">
+        <div>
+            <div class="img1-container">
+            <img src="o3.jpg" width="230" height="180" class="img1">
+             <div class="img1-overlay">2013년 8살 <br>그림</div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+            <div class="img2-container">
+            <img src="o2.jpg" width="230" height="180" class="img2">
+            <div class="img2-overlay">2013년 8살 <br>그림</div>
+            </div>
+        </div>
+        <div class="text-overlay">
+            
+            <h5>내가 그림을 <br>시작하게 된 계기</h5><br>
+            사실 내가 그림을 언제 시작했는지 생각하면 <br>아주 어릴 때로 거슬러 올라가야 한다. 
+            나는 <br>유치원 시절 부터 밖에서 노는 것 보다, TV에서 방영하는 만화를 보며 따라 그리거나 친구와 <br>같이 그림을 그리는 것을
+            즐겨했다. 이 성향은 초등학교로 올라갈 때도 같았다. 그때도 교실에 종합장을  가져와 친구 또는 혼자서 그림을 <br>그렸고 
+            학교에서 개최하는 시화 그리기 등 <br>사생대회를 열심히 참여하는 등 그림 그리기를 즐겨했다. 
+            하지만 이때까진 나에게 그림은 <br>직업적 의미보단 취미적 의미가 컸다.
+        </div>  
+ </div><br>
+
+<p> 당시에 그렸던 그림들 </p><br>
+<div>
+<img src="or1.png" width="250" height="200" class="zoom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <img src="or2.png" width="250" height="200" class="zoom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="or3.png" width="250" height="200" class="zoom"><br><br>
+ <img src="or4.png" width="250" height="200" class="zoom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <img src="or5.png" width="250" height="200" class="zoom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="or6.png" width="250" height="200" class="zoom">
+</div>
+ </main>
+ </body>
+ 
+</html>

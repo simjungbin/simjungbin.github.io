@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    body{
+        font-family: 'Pretendard-Medium', sans-serif;
+            background-color: #e3562b;
+            margin: 0;
+            height: 100vh;
+    }
+    .container {
+            max-width: 90%; 
+            position: relative;
+        }
+        .img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+    header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+        }
+    #menu{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f4e4c3;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            max-width: 1700px;
+        }
+        #menu li{
+            list-style: none;
+            margin: 10px 15px;
+        }
+        .button{       
+            font-size: 15px;
+            font-weight: bold;
+            color: #f4e4c3;
+            text-align: center;
+            padding: 10px 30px;
+            border-radius: 30px;
+            background-color: #f39904;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 0 0 10px;
+        }
+        #logo {
+            margin: 10px 0;
+        }
+        #logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        #my{
+            font-family: 'Pretendard-Medium', sans-serif;
+            font-size: 5rem;
+            font-weight: bold;
+            color: #1384c0;
+            position: absolute;
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .button:hover {
+            color: #e3562b;
+        }
+       
+        @media (max-width: 768px) {
+            body {
+                background-position: center top;
+            }
+
+            #menu {
+                flex-direction: column;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+            #my {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .button {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+
+            #my {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <center>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" width="200" height="100">
+            </a>
+        </div>
+        <ul id="menu">
+            <a href="origin.html" class="button">ORIGIN</a>
+            <a href="path.html" class="button">PATH</a>
+            <a href="evolution.html" class="button">EVOLUTION</a>
+            <a href="admission.html" class="button">ADMISSIONS</a>
+            <a href="kaywon.html" class="button">KAYWON</a>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <span class="img"><img src="sketch.png"></span>
+            <div id="my"><em>MY SKETCHBOOK</em></div>
+        </div>    
+    </main>
+</body>
+</html>
